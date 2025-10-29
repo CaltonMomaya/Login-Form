@@ -1,0 +1,143 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('https://cdn.pixabay.com/photo/2023/04/13/02/20/waterfall-7921517_1280.jpg') no-repeat ;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+
+.wrapper {
+    width: 440px;
+    background: rgba(60, 0, 100, 0.6);
+    color: #fff;
+    border-radius: 15px;
+    padding: 50px 40px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    animation: fadeInUp 0.8s ease forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.wrapper h1 {
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+/*largening place holders*/
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 55px;
+    margin-bottom: 30px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 45px 0 15px;
+    transition: 0.35s;
+}
+
+.input-box input::placeholder {
+    color: #e5e5e5
+}
+
+.input-box input:focus {
+    background: rgba(255, 255, 255, 0.25);
+
+}
+
+.input-box i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 22px;
+}
+
+.remember-forgot label input  {
+    accent-color: #fff;
+    margin-right: 5px;
+}
+
+.remember-forgot a {
+    color: #ffd8ff;
+    text-decoration: none;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+
+}
+
+.remember-forgot a hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #fff;
+}
+
+/* Button for logging in*/
+.btn {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(13deg, #8a2be2, #b05fff);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 19px;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.4s ease transform 0.2s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #9b4dff, #c084fc);
+    transform: translate(-2px);
+}
+
+/*reg sctn*/
+.register-link {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.register-link a {
+    color: #ffd8ff;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.register-link a hover {
+    color: #ffd8ff;
+    text-shadow: 0 0 10px #ffd8ff;
+}
+
+.wrapper {
+    animation: fadeInUp 0.8s ease forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
+ @keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+ }
