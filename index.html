@@ -34,6 +34,7 @@
         font-size: 16px;
         display: none;
         cursor: pointer;
+        z-index: 9999;
     ">
         Install App
     </button>
@@ -62,7 +63,6 @@
             <div class="Register-link">
                 <p>Don't have an account? <a href="#">Register</a></p>
             </div>
-
         </form>
     </div>
 
@@ -87,7 +87,8 @@
         // Register service worker
         if ("serviceWorker" in navigator) {
             navigator.serviceWorker.register("service-worker.js")
-                .then(() => console.log("Service Worker Registered"));
+                .then(() => console.log("Service Worker Registered"))
+                .catch(err => console.log("SW Error:", err));
         }
     </script>
 
